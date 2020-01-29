@@ -22,22 +22,28 @@ tw-story[tags~="Heaven"]{
 }
 
 tw-story[tags~="temple"]{
-  background-image:url("https://raw.githubusercontent.com/OdinC14/Twine-Images/master/973482c24db53295415f9a41290650a7.jpg");
+  background-image:url("https://raw.githubusercontent.com/OdinC14/Twine-Images/master/c6ed2e3000200758f0e64ad7a1bbbe4b.jpg");
   background-size: cover;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="god" color="yellow"></tw-tag>,<tw-tag name="Heaven" color="green"></tw-tag>,<tw-tag name="temple" color="purple"></tw-tag>,<tw-tag name="safety" color="blue"></tw-tag>,<tw-tag name="forest" color="yellow"></tw-tag><tw-passagedata pid="1" name="0" tags="" position="26,13" size="100,100">25 cents...
+}
+tw-story[tags~="forest"]{
+  background-image:url("https://raw.githubusercontent.com/OdinC14/Twine-Images/master/6a4a77b0af43267a4a268ce587e5752c.jpg");
+  background-size: cover;
+}
+tw-story[tags~="safety"]{
+  background-image:url("https://raw.githubusercontent.com/OdinC14/Twine-Images/master/cropped-fantasy-castle-bridge-landscape-waterfalls-2.jpg");
+  background-size: cover;
+}
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="god" color="yellow"></tw-tag>,<tw-tag name="Heaven" color="green"></tw-tag>,<tw-tag name="temple" color="purple"></tw-tag>,<tw-tag name="safety" color="blue"></tw-tag>,<tw-tag name="forest" color="yellow"></tw-tag><tw-passagedata pid="1" name="0" tags="" position="26,13" size="100,100">25 cents...
 
 [[Huh?-&gt;1]]</tw-passagedata><tw-passagedata pid="2" name="1" tags="" position="141,1" size="100,100">25 cents is all it takes...
-to see [[GOD-&gt;God]]</tw-passagedata><tw-passagedata pid="3" name="God" tags="god" position="261,45" size="100,100">&lt;img src=&quot;https://images2.minutemediacdn.com/image/upload/c_crop,h_1190,w_2121,x_0,y_134/f_auto,q_auto,w_1100/v1559847832/shape/mentalfloss/24107-istock-1040334020.jpg&quot;&gt;
+to see [[GOD-&gt;God]]</tw-passagedata><tw-passagedata pid="3" name="God" tags="god" position="261,45" size="100,100">&lt;img src=&quot;https://images2.minutemediacdn.com/image/upload/c_crop,h_1190,w_2121,x_0,y_134/f_auto,q_auto,w_1100/v1559847832/shape/mentalfloss/24107-istock-1040334020.jpg&quot;width=&quot;500&quot; height=&quot;400&quot;&gt;
 
 [[I&#39;ll take you up on that....-&gt;That]]
-[[No thanks, wierdo-&gt;Easy]]</tw-passagedata><tw-passagedata pid="4" name="That" tags="god" position="25,269" size="100,100">Prepare to witness [[PERFECTION-&gt;Blackout]]</tw-passagedata><tw-passagedata pid="5" name="Forest Conflict" tags="Heaven" position="216,255" size="100,100">(set: $counter to 10)
-(live: 1s)[
-    (set: $counter to it - 1)
-    (replace: ?amount)[$counter]
-    (if: $counter is 0)[(go-to: &quot;Death&quot;)]
-
- &lt;img src=&quot;https://raw.githubusercontent.com/OdinC14/Twine-Images/master/shub_niggurath.jpg&quot;&gt;
- 
+[[No thanks, wierdo-&gt;Easy]]</tw-passagedata><tw-passagedata pid="4" name="That" tags="god" position="25,269" size="100,100">&lt;img src=&quot;https://images2.minutemediacdn.com/image/upload/c_crop,h_1190,w_2121,x_0,y_134/f_auto,q_auto,w_1100/v1559847832/shape/mentalfloss/24107-istock-1040334020.jpg&quot;width=&quot;500&quot; height=&quot;400&quot;&gt;
+Prepare to witness [[PERFECTION-&gt;Blackout]]</tw-passagedata><tw-passagedata pid="5" name="Forest Conflict" tags="Heaven" position="216,255" size="100,100">&lt;img src=&quot;https://raw.githubusercontent.com/OdinC14/Twine-Images/master/shub_niggurath.jpg&quot; width=&quot;300px&quot; height=&quot;400px&quot;&gt;
+ (set: $counter to 10)(live: 1s)[(set: $counter to it - 1)(replace: ?amount)[$counter](if: $counter is 0)[(go-to: &quot;Death&quot;)]
  $counter
 
 (text-style: &quot;shudder&quot;) [WTF IS THAT?!]
@@ -50,21 +56,18 @@ What do you do?
 [[&quot;EAT LEAD&quot;....-&gt; shoot]]
 [[GET OUT OF THERE! (flee) -&gt; run]]
 
+]</tw-passagedata><tw-passagedata pid="6" name="Death" tags="" position="842,552" size="100,100">Your move or lack of movement got you killed...
 
+You Are Dead
 
-]
-</tw-passagedata><tw-passagedata pid="6" name="Death" tags="" position="842,552" size="100,100">You Are Dead
-
-</tw-passagedata><tw-passagedata pid="7" name=" shoot" tags="" position="424,322" size="100,100">You don&#39;t have a gun!
-
-[[Guess I&#39;ll just die-&gt;Death]] </tw-passagedata><tw-passagedata pid="8" name=" run" tags="forest" position="388,166" size="100,100">Behind you is the sound of a slimy mass persuing.
+[[Respawn-&gt;Land1]] 
+[[Restart-&gt;0]] </tw-passagedata><tw-passagedata pid="7" name=" shoot" tags="" position="424,322" size="100,100">You don&#39;t have a gun!
+ (set: $counter to 10)(live: 1s)[(set: $counter to it - 1)(replace: ?amount)[$counter](if: $counter is 0)[(go-to: &quot;Death&quot;)]
+ $counter
+[[Guess I&#39;ll just die-&gt;Death]] </tw-passagedata><tw-passagedata pid="8" name=" run" tags="forest" position="388,166" size="100,100">Behind you is the sound of a slimy mass pursuing.
 You run deep into the forest. The path thickens until there are only 3 paths ahead.
 
-(set: $counter to 10)
-(live: 1s)[
-    (set: $counter to it - 1)
-    (replace: ?amount)[$counter]
-    (if: $counter is 0)[(go-to: &quot;Death&quot;)]
+ (set: $counter to 10)(live: 1s)[(set: $counter to it - 1)(replace: ?amount)[$counter](if: $counter is 0)[(go-to: &quot;Death&quot;)]
  $counter
 
 Go through the [[Left-&gt; Left]] path
@@ -73,16 +76,25 @@ Go through the [[Right-&gt;Death]] path
 Turn [[Back-&gt;Death]]
 ]</tw-passagedata><tw-passagedata pid="9" name=" Left" tags="forest" position="554,120" size="100,100">There are two paths ahead now.
 Which do you choose to follow?
-
+ (set: $counter to 10)(live: 1s)[(set: $counter to it - 1)(replace: ?amount)[$counter](if: $counter is 0)[(go-to: &quot;Death&quot;)]
+ $counter
 Follow the [[Left path -&gt;Death]] 
 Follow the [[Right path-&gt;Right1]]
-[[Turn back -&gt;Death]]</tw-passagedata><tw-passagedata pid="10" name="Easy" tags="god" position="27,131" size="100,100">Crisis Averted! Congrats!
-(Good Ending 1)</tw-passagedata><tw-passagedata pid="11" name="Mid" tags="forest" position="565,0" size="100,100">This path appears long and you appear out of shape.
+[[Turn back -&gt;Death]]
+]</tw-passagedata><tw-passagedata pid="10" name="Easy" tags="god" position="27,131" size="100,100">Crisis Averted! Congrats!
+(Good Ending 1)</tw-passagedata><tw-passagedata pid="11" name="Mid" tags="forest" position="565,0" size="100,100">This path appears long and you are out of shape.
 Will you continue down this path?
-
+ (set: $counter to 10)(live: 1s)[(set: $counter to it - 1)(replace: ?amount)[$counter](if: $counter is 0)[(go-to: &quot;Death&quot;)]
+ $counter
 [[Yes-&gt;Long Path]]
-[[Turn Back-&gt; run]] </tw-passagedata><tw-passagedata pid="12" name="Right1" tags="safety" position="789,209" size="100,100">You somehow end up home and safe.
-Good ending 3</tw-passagedata><tw-passagedata pid="13" name="Land1" tags="Heaven" position="136,389" size="100,100">You wake up in a new place.
+[[Turn Back-&gt; run]] 
+]</tw-passagedata><tw-passagedata pid="12" name="Right1" tags="safety" position="789,209" size="100,100">You have escaped the creature and ventured out of the forest
+
+You have found a beautiful city
+
+To bad I haven&#39;t written a story for it yet
+To be continued
+(Good ending 4/4?)</tw-passagedata><tw-passagedata pid="13" name="Land1" tags="Heaven" position="136,389" size="100,100">You wake up in a new place.
 You see a cliff with a view,
 a small temple,
 and a forest.
@@ -92,20 +104,11 @@ Which do you choose to visit?
 [[The forest -&gt;Forest Conflict]]
 [[The temple-&gt; Temple Conflict]]
 [[The cliff-&gt; Cliff Conflict]]</tw-passagedata><tw-passagedata pid="14" name="Blackout" tags="" position="18,387" size="100,100">You [[Blackout-&gt;Land1]]</tw-passagedata><tw-passagedata pid="15" name="Long Path" tags="forest" position="799,95" size="100,100">You run out of stamina and await your impending doom.
-(set: $counter to 10)
-(live: 1s)[
-    (set: $counter to it - 1)
-    (replace: ?amount)[$counter]
-    (if: $counter is 0)[(go-to: &quot;Death&quot;)]
-	$counter
-	]</tw-passagedata><tw-passagedata pid="16" name=" Temple Conflict" tags="temple" position="80,539" size="100,100">(set: $counter to 10)
-(live: 1s)[
-    (set: $counter to it - 1)
-    (replace: ?amount)[$counter]
-    (if: $counter is 0)[(go-to: &quot;Death&quot;)]	
-&lt;img src=&quot;https://raw.githubusercontent.com/OdinC14/Twine-Images/master/img-hooded_tentacle.jpg&quot;&gt; 
+ (set: $counter to 5)(live: 1s)[(set: $counter to it - 1)(replace: ?amount)[$counter](if: $counter is 0)[(go-to: &quot;Death&quot;)]
  $counter
-
+ ]</tw-passagedata><tw-passagedata pid="16" name=" Temple Conflict" tags="temple" position="80,539" size="100,100">&lt;img src=&quot;https://raw.githubusercontent.com/OdinC14/Twine-Images/master/img-hooded_tentacle.jpg&quot; width=&quot;300px&quot; height=&quot;320&quot;&gt; 
+  (set: $counter to 10)(live: 1s)[(set: $counter to it - 1)(replace: ?amount)[$counter](if: $counter is 0)[(go-to: &quot;Death&quot;)]
+ $counter
 (text-style: &quot;shudder&quot;) [WTF IS THAT?!]
 
 It&#39;s just standing there, MENACINGLY!
@@ -114,15 +117,10 @@ What do you do?
 [[Go pray with it -&gt;Pray]]
 [[&quot;EAT LEAD&quot;....-&gt; shoot1]]
 [[GET OUT OF THERE! (flee) -&gt; Surrounded]]
-
-]</tw-passagedata><tw-passagedata pid="17" name=" Cliff Conflict" tags="Heaven" position="303,489" size="100,100">(set: $counter to 10)
-(live: 1s)[
-    (set: $counter to it - 1)
-    (replace: ?amount)[$counter]
-    (if: $counter is 0)[(go-to: &quot;Death&quot;)]
-&lt;img src=&quot;https://raw.githubusercontent.com/OdinC14/Twine-Images/master/Azathoth_the_blind_idiot_god.jpg&quot;&gt;
+]</tw-passagedata><tw-passagedata pid="17" name=" Cliff Conflict" tags="Heaven" position="303,489" size="100,100">&lt;img src=&quot;https://raw.githubusercontent.com/OdinC14/Twine-Images/master/Azathoth_the_blind_idiot_god.jpg&quot;width=&quot;400&quot; height=&quot;300&quot;&gt;
+ (set: $counter to 10)(live: 1s)[(set: $counter to it - 1)(replace: ?amount)[$counter](if: $counter is 0)[(go-to: &quot;Death&quot;)]
  $counter
-
+ 
 (text-style: &quot;shudder&quot;) [WTF IS THAT?!]
 
 It&#39;s just floating there, MENACINGLY!
@@ -136,36 +134,99 @@ What do you do?
 
 
 ]
-</tw-passagedata><tw-passagedata pid="18" name="Pray" tags="temple" position="0,689" size="100,100">They appear confused but perhaps willing to accept your prayers.
-Then they impale you....
-[[...-&gt;Death]]</tw-passagedata><tw-passagedata pid="19" name=" Surrounded" tags="temple" position="266,669" size="100,100">You try to run for the door.
+</tw-passagedata><tw-passagedata pid="18" name="Pray" tags="temple" position="0,689" size="100,100">As you pray you sense the presence in the room multiply.
+Its a whole cult and you have become their sacrifice.
+
+You are Dead
+
+[[Respawn -&gt;Land1]] 
+[[Restart -&gt;0]] </tw-passagedata><tw-passagedata pid="19" name=" Surrounded" tags="temple" position="290,695" size="100,100">You try to run for the door.
 More of them surround you.
 Now what?
-
+ (set: $counter to 10)(live: 1s)[(set: $counter to it - 1)(replace: ?amount)[$counter](if: $counter is 0)[(go-to: &quot;Death&quot;)]
+ $counter
 [[Give up-&gt;Death]] 
-[[Screech-&gt;Portal]]</tw-passagedata><tw-passagedata pid="20" name="Portal" tags="temple" position="250,819" size="100,100">Somehow your screech opened up a dimensional rift...
-(set: $counter to 10)
-(live: 1s)[
-    (set: $counter to it - 1)
-    (replace: ?amount)[$counter]
-    (if: $counter is 0)[(go-to: &quot;Death&quot;)]
-	$counter
+[[Fight-&gt;Fight]]
+[[Stand and scream-&gt;Portal]]
+]</tw-passagedata><tw-passagedata pid="20" name="Portal" tags="temple" position="244,832" size="100,100">Somehow your screech opened up a dimensional rift...
+ (set: $counter to 10)(live: 1s)[(set: $counter to it - 1)(replace: ?amount)[$counter](if: $counter is 0)[(go-to: &quot;Death&quot;)]
+ $counter
 [[Jump-&gt;Home]] into the rift.
 [[Ignore-&gt;Death]]. I don&#39;t trust that thing.
 ]</tw-passagedata><tw-passagedata pid="21" name="Home" tags="" position="155,989" size="100,100">You find yourself lying on your sofa at Home
 
 You survived! Congrats.
-(Good ending 2)</tw-passagedata><tw-passagedata pid="22" name=" shoot1" tags="temple" position="120,718" size="100,100">You make gun noises while making finger motions like an idiot.
+(Good ending 2/4)</tw-passagedata><tw-passagedata pid="22" name=" shoot1" tags="temple" position="120,718" size="100,100">You make gun noises while making finger motions like an idiot.
 The creature stares as it charges at you.
-(set: $counter to 10)
-(live: 1s)[
-    (set: $counter to it - 1)
-    (replace: ?amount)[$counter]
-    (if: $counter is 0)[(go-to: &quot;Death&quot;)]
-	$counter
+ (set: $counter to 10)(live: 1s)[(set: $counter to it - 1)(replace: ?amount)[$counter](if: $counter is 0)[(go-to: &quot;Death&quot;)]
+ $counter
 [[Run -&gt; Surrounded]] 
-[[Continue looking like an idiot-&gt;Death]] 
-]</tw-passagedata></tw-storydata>
+[[Continue making an ass of yourself at this cool party-&gt;Death]] 
+]</tw-passagedata><tw-passagedata pid="23" name="Fight" tags="temple" position="401,851" size="100,100">You start doing a bunch of moves and hand signs you saw in some anime
+
+They don&#39;t like it and start jabbing at you with their tentacles.
+ (set: $counter to 10)(live: 1s)[(set: $counter to it - 1)(replace: ?amount)[$counter](if: $counter is 0)[(go-to: &quot;Death&quot;)]
+ $counter
+[[Jump-&gt;crotch]]
+[[Duck and roll-&gt;weapon]] 
+[[Stand in a daze-&gt;Death]]
+]</tw-passagedata><tw-passagedata pid="24" name="weapon" tags="temple" position="475,1000" size="100,100">Your evasion has led you to a sword.
+It&#39;s just sitting here for some reason...
+ (set: $counter to 10)(live: 1s)[(set: $counter to it - 1)(replace: ?amount)[$counter](if: $counter is 0)[(go-to: &quot;Death&quot;)]
+ $counter
+[[Pick that stroke of luck up! -&gt; surround2]]
+[[Nah its probably cursed... -&gt;Death]] 
+]</tw-passagedata><tw-passagedata pid="25" name=" surround2" tags="temple" position="407,1138" size="100,100">You have a weapon now but you&#39;re still surrounded
+They take another jab at you
+ (set: $counter to 10)(live: 1s)[(set: $counter to it - 1)(replace: ?amount)[$counter](if: $counter is 0)[(go-to: &quot;Death&quot;)]
+ $counter
+[[Jump -&gt; duel2]]
+[[Duck and roll -&gt;Death]] 
+[[Stare at your cool sword -&gt;Death]] 
+]</tw-passagedata><tw-passagedata pid="26" name=" duel2" tags="temple" position="527,1295" size="100,100">You are in front of the leader.
+It prepares to jab you again.
+ (set: $counter to 10)(live: 1s)[(set: $counter to it - 1)(replace: ?amount)[$counter](if: $counter is 0)[(go-to: &quot;Death&quot;)]
+ $counter
+[[Swing-&gt;2fast]]
+[[Parry-&gt;Parry]]
+[[Taunt-&gt;Death]]
+]</tw-passagedata><tw-passagedata pid="27" name="crotch" tags="temple" position="355,1001" size="100,100">You do a sick flip into the air.
+Unfortunately you landed on a sword in the ground...
+
+You are Dead
+
+[[Respawn -&gt;Land1]] 
+[[Restart-&gt;0]]</tw-passagedata><tw-passagedata pid="28" name="2fast" tags="temple" position="249,1445" size="100,100">You try to outswing it.
+Your cocky ass gets impaled by its snake heads.
+
+You are Dead
+
+[[Respawn -&gt;Land1]] 
+[[Restart -&gt;0]] </tw-passagedata><tw-passagedata pid="29" name="Parry" tags="temple" position="627,1447" size="100,100">You wait for the right moment and parry that filthy casual.
+
+NOW FINISH HIM!
+ (set: $counter to 10)(live: 1s)[(set: $counter to it - 1)(replace: ?amount)[$counter](if: $counter is 0)[(go-to: &quot;Death&quot;)]
+ $counter
+[[Riposte -&gt; riposte]]
+[[Stand there celebrating your lucky parry-&gt;Death]] 
+]</tw-passagedata><tw-passagedata pid="30" name=" riposte" tags="temple" position="445,1600" size="100,100">The leader collapses causing its minions to back off
+
+A light glows at the end of the temple
+ (set: $counter to 10)(live: 1s)[(set: $counter to it - 1)(replace: ?amount)[$counter](if: $counter is 0)[(go-to: &quot;Death&quot;)]
+ $counter
+[[Go to the light -&gt;Home2]]
+[[Slaughter the rest of these cult bastards!-&gt;crazy]]
+]</tw-passagedata><tw-passagedata pid="31" name="Home2" tags="" position="370,1750" size="100,100">The light teleports you back home
+
+You have survived!
+(Good ending 3/4)</tw-passagedata><tw-passagedata pid="32" name="crazy" tags="temple" position="520,1750" size="100,100">Your bloodlust gets the better of you...
+
+The cult counters you and their leader gets back up.
+
+You are dead
+
+[[Respawn-&gt;Land1]] 
+[[Restart-&gt;0]] </tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
